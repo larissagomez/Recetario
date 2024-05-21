@@ -62,7 +62,7 @@ img{
     padding: 15px;
 }
 
-/* Estilos de la busqueda por letras */
+/* Estilo de la busqueda por letras */
 .indexContainer {
     display: flex;
     flex-wrap: wrap;  
