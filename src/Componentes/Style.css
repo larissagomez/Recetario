@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI';
+}
+body{
+    background-color: #f0f0f0;
+}
+.main{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heading {
+    background-color: #e5ca00;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+.heading h1{
+    color: #1b1b1b;
+    font-size: 48px;
+    font-weight:900;
+    letter-spacing: 1px;
+    padding-top: 2rem;
+}
+.search-bar{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 0.3rem 1rem;
+}
+
+/* Estilos del contenedor de las recetas */
+.container{
+    width: 100%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    gap: 1.5rem 1.5rem;
+    justify-content: center;
+}
+.card{
+    width: 250px;
+    border-radius: 10px;
+    background-color: #460041;
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.card h3{
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+}
+
+/* Estilos de la busqueda por letras */
+.indexContainer {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center; 
+    padding: 20px;
+}
+
+.numBox {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    background-color: #12030e;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 5px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.numBox:hover {
+    background-color: #950a54; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .numBox {
+        width: 35px; 
+        height: 35px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .numBox {
+        width: 30px;  
+        height: 30px;  
+    }
+}
